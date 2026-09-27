@@ -1,0 +1,14 @@
+## Interface: 30300
+## Title: MinimalHunter
+## Notes: A clean, minimal UI built around the hunter: flat unit frames, compact bars, auto shot timer, aspect and ammo watch.
+## Author: buildthehomelab
+## Version: 1.0.0
+## SavedVariablesPerCharacter: MinimalHunterDB
+
+Core.lua
+ActionBars.lua
+UnitFrames.lua
+CastBars.lua
+Hunter.lua
+Minimap.lua
+Misc.lua
