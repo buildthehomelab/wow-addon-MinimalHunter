@@ -2,9 +2,14 @@
 
 A clean, minimal UI for World of Warcraft 3.3.5a (WotLK), built around playing a hunter. Flat dark panels, 1px borders, Arial Narrow, no art. No libraries, no config window.
 
-## Install
+## Requirements
 
-Copy the `MinimalHunter` folder into `World of Warcraft/Interface/AddOns/`, then enable it on the character select screen.
+- A WoW 3.3.5a (12340) client. The addon runs entirely in the client, so it works on [AzerothCore](https://www.azerothcore.org) or any other 3.3.5a server.
+- DragonUI turned off for the character (see Installation). The two addons take over the same frames.
+
+## Installation
+
+Copy the `MinimalHunter` folder into your `Interface/AddOns` folder (`World of Warcraft/Interface/AddOns/`), then enable it on the character select screen.
 
 **Turn DragonUI off for this character.** Both addons take over the same bars and frames, so MinimalHunter stays inactive (and tells you why in chat) while DragonUI is enabled.
 
@@ -41,3 +46,17 @@ Positions are saved per character.
 - Keys: `B` opens bags, and the usual keys (`C`, `P`, `N`, `L`, `O`, `I`, `Y`…) open panels while the micro menu is hidden.
 - Vehicles with their own UI use the Blizzard vehicle bar. The action bars hide until you leave the vehicle.
 - Other addons' minimap buttons (LibDBIcon etc.) still orbit where the round minimap edge used to be.
+
+## Troubleshooting
+
+- **Nothing changes and chat says why:** [DragonUI](https://github.com/NeticSoul/DragonUI) is enabled. MinimalHunter stays inactive while it is, so turn DragonUI off for this character.
+- **An action bar row is missing:** on the first login the addon turns on the extra action bars in Interface Options. If a row is still missing, `/reload` once.
+- **A frame won't move:** `/mh unlock` shows the movers. They lock themselves when you enter combat, so unlock again afterwards.
+
+## Credits
+
+Author: [buildthehomelab](https://github.com/buildthehomelab)
+
+## License
+
+Released under the [MIT License](LICENSE).
